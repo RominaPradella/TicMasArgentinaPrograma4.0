@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Portfolio Web</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" 
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+<!--MENU ENCABEZADO-->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">Romina</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+ 
+<!--SECION INICIO-->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="img/profile.png" alt="Romina Pradella">
+            </div>
+            <h1>Romina Pradella</h1>
+            <h2>Diseñadora Web</h2> 
+            <div class="redes">
+                <a href="https://www.facebook.com/romy.pradella/"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/romypradella/"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/romina-pradella/"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://web.whatsapp.com/"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>    
+        </div>        
+    </section>
+
+<!--SECCION SOBRE MI-->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-accion">
+            <h2>Sobre Mi</h2>
+            <p><samp>Hola, Soy Romina Pradella.</samp>Tengo 35 años, soy de Paraná, Entre Ríos y desde que era pequeña siempre llamó mi atención
+                saber como era el funcionamiento de las distintas paginas web que consultaba para realizar las tareas del colegio.
+                Soy Diseñadora de Páginas Web y por razones económicas luego de recibirme deje de capacitarme por un largo periodo de tiempo y 
+                ahora gracias a este proyecto puedo volver a capacitarme y adquirir nuevos conocimientos.
+            </p>
+            
+            <div class="fila">
+                <!-- datos personales -->
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Cumpleaños</strong>
+                            13/11/1986
+                        </li>
+                        <li>
+                            <strong>Teléfono</strong>
+                            03541-15589162
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            rominapradella@gmail.com
+                        </li>
+                        <li>
+                            <strong>Dirección</strong>
+                            17 de Octubre de 1945 Nº76 - Paraná - Entre Ríos 
+                        </li>
+                        <li>
+                            <strong>Website</strong>
+                            <a href="https://github.com/RominaPradella">github.com/RominaPradella</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- intereses -->
+                <div class="col">
+                    <h3>Intereses</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa-solid fa-book-open-reader"></i>
+                            <span>LIBROS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-dumbbell"></i>
+                            <span>ENTRENAR</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-sharp fa-solid fa-headphones"></i>
+                            <span>MUSICA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-utensils"></i>
+                            <samp>COCINAR</samp>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-suitcase-rolling"></i>
+                            <span>VIAJAR</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button>
+                <a href="doc/Curriculum Vitae Romina Pradella.pdf">Descargar CV <i class="fa-solid fa-download"></i> </a>
+                <samp class="overlay"></samp>
+            </button>
+        </div>
+    </section>
+
+<!--SECCION SKILLS-->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>Skills</h2>
+            <div class="fila">
+            <!-- habilidades tecnicas -->
+                <div class="col">
+                    <h3>Technical Skills</h3>
+                    <div class="skill">  
+                        <span>Javascrip</span>
+                        <div class="barra-skill">
+                            <div class="progreso javascript">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">  
+                        <span>HTML & CSS</span>
+                        <div class="barra-skill">
+                            <div class="progreso html-css">
+                                <span>85%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">  
+                        <span>MySQL</span>
+                        <div class="barra-skill">
+                            <div class="progreso mysql">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">  
+                        <span>Angular & Bootstrap</span>
+                        <div class="barra-skill">
+                            <div class="progreso angular-bootstrap">
+                                <span>55%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            <!-- habilidades profesionales -->
+                <div class="col">
+                    <h3>Professional Skills</h3>
+                    <div class="skill">  
+                        <span>Comunicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso comunicacion">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">  
+                        <span>Trabajo en Equipo</span>
+                        <div class="barra-skill">
+                            <div class="progreso trabajoequipo">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">  
+                        <span>Creatividad</span>
+                        <div class="barra-skill">
+                            <div class="progreso creatividad">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">  
+                        <span>Dedicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso dedicacion">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+<!--SECCION CURRICULUM-->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Curriculum</h2>
+            <div class="fila">
+            <!--educacíon-->
+                <div class="col izquierda">
+                    <h3>Educación</h3>
+                    <div class="item izq">
+                        <h4>Bachiller en Capacitación Laboral como “Auxiliar en Comunicación Social</h4>
+                        <span class="casa">Instituto Cristo Redentor</span>
+                        <span class="fecha">2000 - 2004</span>
+                        <p>Secundaria</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Diseño Web</h4>
+                        <span class="casa">Leading Training Corporation</span>
+                        <span class="fecha">2015 - 2016</span>
+                        <p>Curso de Diseño Web. Utilizando el programa Adobe Dreamweaver con programación en HTML y CSS, también uso de Photoshop y CorelDraw para la edición de imágenes</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Formación en UX Design</h4>
+                        <span class="casa">Alura Latam</span>
+                        <span class="fecha">2022 - 2023</span>
+                        <p>Curso de Front y Back End con el uso de Javascrip, MySQL y Github.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+            <!--experiencia laboral-->
+            <div class="col derecha">
+                <h3>Experiencia de Trabajo</h3>
+                <div class="item der">
+                    <h4>Tutora / Auxiliar de Docente</h4>
+                    <span class="casa">Instituto Remedios Escalada de San Martín</span>
+                    <span class="fecha">2010 - 2011</span>
+                    <p> Dictado de la cátedra de Informática utilizando el Paquete Office. Villa Carlos Paz - Córdoba</p>
+                    <div class="conectord">
+                        <div class="circulod"></div>
+                    </div>
+                </div>
+                <div class="item der">
+                    <h4>Programadora Junior</h4>
+                    <span class="casa">Sociedad Anónima en Formación (Sin nombre)</span>
+                    <span class="fecha">2016</span>
+                    <p>Desarrollando un sistema con logueo, búsqueda de clientes y actualizaciones de datos, bajo el lenguaje HTML, PHP, SQL y MySQL. Villa Carlos Paz - Córdoba</p>
+                    <div class="conectord">
+                        <div class="circulod"></div>
+                    </div>
+                </div>
+                <div class="item der">
+                    <h4>Diseñadora y Administradora Web</h4>
+                    <span class="casa">El Renuevo Viviendas Industrializadas</span>
+                    <span class="fecha">2016</span>
+                    <p>Realización de publicaciones en diversas páginas de internet y mantención de su propio Sitio Web. Villa Carlos Paz - Córdoba</p>
+                    <div class="conectord">
+                        <div class="circulod"></div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+
+<!--SECCION PORTFOLIO-->
+    <section id="portfolio" class="portfolio">
+        <div class="contenido-seccion">
+            <h3>PORTFOLIO</h3>
+            <div class="galeria">
+                <div class="proyecto">
+                    <img src="img/encriptador.png" alt="Encriptador">
+                    <div class="overlay">
+                        <h3>Encriptador</h3>
+                        <p>Pagina Web</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/juegoahorcado.png" alt="Ahorcado">
+                    <div class="overlay">
+                        <h3>Arcade</h3>
+                        <p>Juego del Ahorcado</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/ecommers.PNG" alt="E-Commerce">
+                    <div class="overlay">
+                        <h3>AluraGeek</h3>
+                        <p>Tienda virtual.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!--SECCION CONTACTO-->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>CONTACTO</h2>
+            <div class="fila">
+            <!-- formulario -->
+                <div class="col">
+                    <input type="text" placeholder="Tu Nombre">
+                    <input type="text" placeholder="Número Telefónico">
+                    <input type="text" placeholder="Dirección de Correo">
+                    <input type="text" placeholder="Tema">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                    <button>
+                        Enviar Mensaje <i class="fa-solid fa-paper-plane"></i>
+                        <span class="overlay"></span>
+                    </button>   
+                </div>
+            <!--mapa-->
+                <div class="col">
+                    <a href="https://www.google.com.ar/maps/@-31.7533952,-60.5208378,17.5z"> <img src="img/ubicacion.PNG" alt="Ubicacion Geografica"></a>
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+                                17 de Octubre de 1945 Nº76 - Paraná - Entre Ríos
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-mobile-screen"></i>
+                                Llamanos: 0343 - 156215549
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                                E-mail: valeriapradella@gmail.com
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!--FOOTER-->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i> 
+        </a>
+        <div class="redes">
+            <a href="https://www.facebook.com/romy.pradella/"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/romypradella/"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/romina-pradella/"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://web.whatsapp.com/"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>        
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
